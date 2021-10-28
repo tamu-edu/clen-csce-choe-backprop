@@ -1,4 +1,3 @@
-----------------------------------------------------------------------------
 Date: 		Fri Nov  9 13:31:23 CST 2001
 Author: 	Yoonsuck Choe <choe@tamu.edu>
 URL:		http://www.cs.tamu.edu/faculty/choe/src/backprop-1.6.tar.gz
@@ -67,7 +66,7 @@ III. How to run
    bp.cc source file.
 
    To repeat:
-
+```
 		Comments: do not enter these in the config file
    2 4 1        number of input units, hidden units, output units
    4            number of training input-output patterns (we have 4 below)
@@ -76,19 +75,23 @@ III. How to run
    0 1 1        training 2 : ..
    1 0 1	training 3 : ..
    1 1 0	training 4 : ..
+```
 
    The output is a bit of a mess, so you shall "grep" for interesting stuff:
 
+```
 	./bp conf/and.conf > and.out
 
 	grep ERR and.out			: see how error decreases
 	grep OUT and.out			: see how the output evolves
 
 	egrep "TARGET\|OUT" and.out		: compare target and output
-
+```
    For example, to extract the current epoch and error,
 
+```
 	awk '{print $2,$3}' and.out > and.dat
+```
 
    and plot and.dat with matlab or some other package.
 
