@@ -1,9 +1,6 @@
-'''
 Date: 		Fri Nov  9 13:31:23 CST 2001
+
 Author: 	Yoonsuck Choe <choe@tamu.edu>
-URL:		http://www.cs.tamu.edu/faculty/choe/src/backprop-1.6.tar.gz
-Version: 	1.6
-'''
 
 ----------------------------------------------------------------------------
 
